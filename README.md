@@ -14,6 +14,14 @@ A neural network-based handwritten digit recognition system with a Tkinter GUI i
 pip install pillow numpy tkinter
 ```
 
+## Dataset
+
+Download the MNIST training images:
+```bash
+wget https://zenodo.org/records/13292895/files/mnist_images.zip?download=1 -O mnist_images.zip
+unzip mnist_images.zip
+```
+
 ## Usage
 
 ### 1. Training the Model
@@ -56,21 +64,6 @@ Features:
 - **Learning Rate**: 0.05
 - **Optimizer**: Gradient Descent with Backpropagation
 - **Loss Function**: Cross-entropy
-
-## Directory Structure
-
-```
-DS_akrsir/
-├── cptraining.py
-├── test.py
-├── weights.npz
-└── images/
-    └── training/
-        ├── 0/
-        ├── 1/
-        ├── ...
-        └── 9/
-```
 
 ## How It Works
 
